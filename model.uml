@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Fog="http:///pusztai/thomas/architecture/fog/1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///pusztai/thomas/architecture/fog/1.0 ../FogUMLProfile/Fog.profile.uml#_na_QoQCwEemUUuzUq75umw">
+  <uml:Model xmi:id="_4jEhcGZpEeiT6MBdX3sCxg" name="HealthCare">
+    <packageImport xmi:id="_jnw8cGZ6EeiSn7XRQcELJw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:id="_E2M6cGZ_EeiSn7XRQcELJw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_cuN-AHLsEeiPAffOBZKOsg" name="Models">
+      <packagedElement xmi:type="uml:Class" xmi:id="_X4za8GZ6EeiSn7XRQcELJw" name="BodyTemperature" visibility="public">
+        <ownedAttribute xmi:id="_mqXKwGZ6EeiSn7XRQcELJw" name="degCelsius" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mqYY4GZ6EeiSn7XRQcELJw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_mqYY4WZ6EeiSn7XRQcELJw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_JlQAUGZ7EeiSn7XRQcELJw" name="BloodPressure" visibility="public">
+        <ownedAttribute xmi:id="_gxuuAGZ7EeiSn7XRQcELJw" name="mmHgSystolic" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gxuuAWZ7EeiSn7XRQcELJw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gxvVEGZ7EeiSn7XRQcELJw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_oyLWYGZ7EeiSn7XRQcELJw" name="mmHgDiastolic" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_oyL9cGZ7EeiSn7XRQcELJw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_oyL9cWZ7EeiSn7XRQcELJw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_SxU44GZ8EeiSn7XRQcELJw" name="BloodSugarLevel" visibility="public">
+        <ownedAttribute xmi:id="_UXXpoGZ8EeiSn7XRQcELJw" name="mmolPerLiter" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UXYQsGZ8EeiSn7XRQcELJw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UXYQsWZ8EeiSn7XRQcELJw" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_YmzMkGZ-EeiSn7XRQcELJw" name="Bolus" visibility="public">
+        <ownedAttribute xmi:id="_PHmQEOQmEeigWPGFTFB4cA" name="insulinUnits" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TlbGQOQmEeigWPGFTFB4cA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TlbGQeQmEeigWPGFTFB4cA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_cpcrgOQmEeigWPGFTFB4cA" name="durationMinutes" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_cpdSkOQmEeigWPGFTFB4cA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cpdSkeQmEeigWPGFTFB4cA" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_eyVFQGZ_EeiSn7XRQcELJw" name="InsulinPumpState" visibility="public">
+        <ownedRule xmi:id="_HidkoOBKEeiEg5zqLw40Ng" name="maxInsulinDosage" constrainedElement="_eyVFQGZ_EeiSn7XRQcELJw">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_HidkoeBKEeiEg5zqLw40Ng" name="constraintSpec">
+            <language>OCL</language>
+            <body>self.insulinUnitsAdministeredLast24Hours &lt;= self.treatmentPlan.maxInsulinUnitsPerDay and &#xD;
+    self.insulinUnitsAdministeredLastHour &lt;= self.treatmentPlan.maxInsulinUnitsPerHour</body>
+          </specification>
+        </ownedRule>
+        <ownedAttribute xmi:id="_2cB6cGZ_EeiSn7XRQcELJw" name="currentTime" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2cChgGZ_EeiSn7XRQcELJw" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2cChgWZ_EeiSn7XRQcELJw" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_v-eZoNSHEei0zfCELeQRrA" name="insulinUnitsAdministeredLastHour" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_v-eZodSHEei0zfCELeQRrA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_v-eZotSHEei0zfCELeQRrA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_3hW8QNSHEei0zfCELeQRrA" name="insulinUnitsAdministeredLast24Hours" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3hW8QdSHEei0zfCELeQRrA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3hW8QtSHEei0zfCELeQRrA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_CmrzkOQuEeigWPGFTFB4cA" name="timeLastBolusEnded" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_CmrzkeQuEeigWPGFTFB4cA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_CmrzkuQuEeigWPGFTFB4cA" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_-FN5YGZ_EeiSn7XRQcELJw" name="BasalRate" visibility="public">
+        <ownedAttribute xmi:id="__GlqkOQlEeigWPGFTFB4cA" name="insulinUnitsPerHour" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="__GmRoOQlEeigWPGFTFB4cA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="__GmRoeQlEeigWPGFTFB4cA" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_i7edYNSHEei0zfCELeQRrA" name="insulinPumpStateToTreatmentPlan" memberEnd="_i7edYdSHEei0zfCELeQRrA _i7edZNSHEei0zfCELeQRrA" navigableOwnedEnd="_i7edZNSHEei0zfCELeQRrA">
+        <ownedEnd xmi:id="_i7edYdSHEei0zfCELeQRrA" name="insulinPumpState" type="_eyVFQGZ_EeiSn7XRQcELJw" association="_i7edYNSHEei0zfCELeQRrA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i7edYtSHEei0zfCELeQRrA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i7edY9SHEei0zfCELeQRrA" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="_i7edZNSHEei0zfCELeQRrA" name="treatmentPlan" type="_34am0NSGEei0zfCELeQRrA" aggregation="shared" association="_i7edYNSHEei0zfCELeQRrA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_i7edZdSHEei0zfCELeQRrA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_i7edZtSHEei0zfCELeQRrA" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_gLXHgOQwEeigWPGFTFB4cA" name="insulinPumpStateToBolus" memberEnd="_gLXHgeQwEeigWPGFTFB4cA _gLXHhOQwEeigWPGFTFB4cA" navigableOwnedEnd="_gLXHhOQwEeigWPGFTFB4cA">
+        <ownedEnd xmi:id="_gLXHgeQwEeigWPGFTFB4cA" name="insulinPumpState" type="_eyVFQGZ_EeiSn7XRQcELJw" association="_gLXHgOQwEeigWPGFTFB4cA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gLXHguQwEeigWPGFTFB4cA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gLXHg-QwEeigWPGFTFB4cA" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="_gLXHhOQwEeigWPGFTFB4cA" name="bolus" type="_YmzMkGZ-EeiSn7XRQcELJw" aggregation="shared" association="_gLXHgOQwEeigWPGFTFB4cA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_gLXHheQwEeigWPGFTFB4cA"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_gLXHhuQwEeigWPGFTFB4cA" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Activity" xmi:id="_6DlMwGZ7EeiSn7XRQcELJw" name="HealthCare" node="_4xReEGaAEeiSn7XRQcELJw _QwEtQG2XEeiXx8v9o2yVwg _ejKYkHJLEei-Mrx8qSm6Bw _hJYXcHJMEei-Mrx8qSm6Bw _mnTYsHJMEei-Mrx8qSm6Bw _z3gqgHJMEei-Mrx8qSm6Bw _aE_5QHJNEei-Mrx8qSm6Bw _FSNxYHJOEei-Mrx8qSm6Bw _NYDQEHJOEei-Mrx8qSm6Bw _yRz1wHMBEeis99BW1eMcEA _N0l1UHMCEeis99BW1eMcEA _eMG2UHMCEeis99BW1eMcEA _F-aGwHMDEeis99BW1eMcEA _KxkTwHMDEeis99BW1eMcEA _VxqkIHMDEeis99BW1eMcEA _i_yLQHMDEeis99BW1eMcEA _yvx5QHMDEeis99BW1eMcEA _6Um8oHMDEeis99BW1eMcEA _AbRY4HMEEeis99BW1eMcEA _LrB14HMEEeis99BW1eMcEA _SyJpkHMEEeis99BW1eMcEA _WxlTkHMEEeis99BW1eMcEA _hDMGQHMEEeis99BW1eMcEA _lsC8MHMOEeis99BW1eMcEA _2iyP0HMOEeis99BW1eMcEA _IeckIHMPEeis99BW1eMcEA _UhZ_sHMPEeis99BW1eMcEA _SSMh0OQ8EeiREf9mJem41A _uFPGwORDEeiREf9mJem41A _OHAaIOREEeiREf9mJem41A _FYylwPGKEeiwI62RnHt_sg _1ABmoDedEemlAtv87Z4J8A _RxepsDenEemlAtv87Z4J8A">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_T3UyEG2XEeiXx8v9o2yVwg" target="_QwEtQG2XEeiXx8v9o2yVwg" source="_4xReEGaAEeiSn7XRQcELJw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_T3WAMG2XEeiXx8v9o2yVwg" name="Start_To_Init_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_T3XOUG2XEeiXx8v9o2yVwg" name="Start_To_Init_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Jj9lUHJMEei-Mrx8qSm6Bw" target="_ejKYkHJLEei-Mrx8qSm6Bw" source="_FYylwPGKEeiwI62RnHt_sg">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_Jj9lUXJMEei-Mrx8qSm6Bw" name="storeHeartRate_call_To_1 sec_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_Jj-MYHJMEei-Mrx8qSm6Bw" name="storeHeartRate_call_To_1 sec_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_wRdJ0HJMEei-Mrx8qSm6Bw" target="_mnTYsHJMEei-Mrx8qSm6Bw" source="_hJYXcHJMEei-Mrx8qSm6Bw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_wRdw4HJMEei-Mrx8qSm6Bw" name="QueryData_To_measureBloodSugar_call_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_wRdw4XJMEei-Mrx8qSm6Bw" name="QueryData_To_measureBloodSugar_call_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_5ThAMHJMEei-Mrx8qSm6Bw" target="_z3gqgHJMEei-Mrx8qSm6Bw" source="_hJYXcHJMEei-Mrx8qSm6Bw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_5ThnQHJMEei-Mrx8qSm6Bw" name="QueryData_To_measureTemperature_call_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_5ThnQXJMEei-Mrx8qSm6Bw" name="QueryData_To_measureTemperature_call_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_fTwdIHJNEei-Mrx8qSm6Bw" target="_aE_5QHJNEei-Mrx8qSm6Bw" source="_mnTYsHJMEei-Mrx8qSm6Bw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_fTwdIXJNEei-Mrx8qSm6Bw" name="measureBloodSugar_call_To_CombineData_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_fTxEMHJNEei-Mrx8qSm6Bw" name="measureBloodSugar_call_To_CombineData_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_f85gwHJNEei-Mrx8qSm6Bw" target="_aE_5QHJNEei-Mrx8qSm6Bw" source="_z3gqgHJMEei-Mrx8qSm6Bw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_f85gwXJNEei-Mrx8qSm6Bw" name="measureTemperature_call_To_CombineData_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_f86H0HJNEei-Mrx8qSm6Bw" name="measureTemperature_call_To_CombineData_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Kq9-wHJOEei-Mrx8qSm6Bw" target="_FSNxYHJOEei-Mrx8qSm6Bw" source="_hJYXcHJMEei-Mrx8qSm6Bw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_Kq9-wXJOEei-Mrx8qSm6Bw" name="QueryData_To_LastBloodPressureCheckOlderThan1Hour_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_Kq-l0HJOEei-Mrx8qSm6Bw" name="QueryData_To_LastBloodPressureCheckOlderThan1Hour_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Pu06MHJOEei-Mrx8qSm6Bw" name="[LastBloodPressureCheckOlderThan1Hour]" target="_NYDQEHJOEei-Mrx8qSm6Bw" source="_FSNxYHJOEei-Mrx8qSm6Bw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_Pu06MXJOEei-Mrx8qSm6Bw" name="LastBloodPressureCheckOlderThan1Hour_To_measureBloodPressure_call_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_Pu1hQHJOEei-Mrx8qSm6Bw" name="LastBloodPressureCheckOlderThan1Hour_To_measureBloodPressure_call_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_SOzjoHJOEei-Mrx8qSm6Bw" target="_aE_5QHJNEei-Mrx8qSm6Bw" source="_NYDQEHJOEei-Mrx8qSm6Bw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_SO0KsHJOEei-Mrx8qSm6Bw" name="measureBloodPressure_call_To_CombineData_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_SO0KsXJOEei-Mrx8qSm6Bw" name="measureBloodPressure_call_To_CombineData_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ua3bYHLrEeiPAffOBZKOsg" name="else" target="_aE_5QHJNEei-Mrx8qSm6Bw" source="_FSNxYHJOEei-Mrx8qSm6Bw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_ua4CcHLrEeiPAffOBZKOsg" name="_To_CombineData_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ua4pgHLrEeiPAffOBZKOsg" name="_To_CombineData_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_XRKdcHMCEeis99BW1eMcEA" name="[BloodSugarIsCritical]" target="_IeckIHMPEeis99BW1eMcEA" source="_yRz1wHMBEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_XRLEgHMCEeis99BW1eMcEA" name="Evaluate Data_To_callAmbulance_call_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_XRLEgXMCEeis99BW1eMcEA" name="Evaluate Data_To_callAmbulance_call_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Mi8KwHMDEeis99BW1eMcEA" name="[HeartRateIsAbnormal]" target="_KxkTwHMDEeis99BW1eMcEA" source="_eMG2UHMCEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_Mi8KwXMDEeis99BW1eMcEA" name="_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_Mi8x0HMDEeis99BW1eMcEA" name="_To__weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_QsXeQHMDEeis99BW1eMcEA" name="[BloodPressureDataOlderThan4Minutes]" target="_F-aGwHMDEeis99BW1eMcEA" source="_KxkTwHMDEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_QsYFUHMDEeis99BW1eMcEA" name="_To_measureBloodPressure_call_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_QsYFUXMDEeis99BW1eMcEA" name="_To_measureBloodPressure_call_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_YgrvIHMDEeis99BW1eMcEA" name="else" target="_VxqkIHMDEeis99BW1eMcEA" source="_KxkTwHMDEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_YgsWMHMDEeis99BW1eMcEA" name="_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_YgsWMXMDEeis99BW1eMcEA" name="_To__weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_auuUAHMDEeis99BW1eMcEA" target="_VxqkIHMDEeis99BW1eMcEA" source="_F-aGwHMDEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_auuUAXMDEeis99BW1eMcEA" name="measureBloodPressure_call_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_auuUAnMDEeis99BW1eMcEA" name="measureBloodPressure_call_To__weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_d6DAgHMDEeis99BW1eMcEA" name="[BloodPressureCritical]" target="_IeckIHMPEeis99BW1eMcEA" source="_VxqkIHMDEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_d6DAgXMDEeis99BW1eMcEA" name="_To_callAmbulance_call_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_d6DAgnMDEeis99BW1eMcEA" name="_To_callAmbulance_call_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_lNn70HMDEeis99BW1eMcEA" name="else" target="_2iyP0HMOEeis99BW1eMcEA" source="_eMG2UHMCEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_lNoi4HMDEeis99BW1eMcEA" name="_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_lNoi4XMDEeis99BW1eMcEA" name="_To__weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_l_myYHMDEeis99BW1eMcEA" name="else" target="_2iyP0HMOEeis99BW1eMcEA" source="_VxqkIHMDEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_l_myYXMDEeis99BW1eMcEA" name="_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_l_myYnMDEeis99BW1eMcEA" name="_To__weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_qj-VcHMDEeis99BW1eMcEA" name="else" target="_i_yLQHMDEeis99BW1eMcEA" source="_yRz1wHMBEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_qj-VcXMDEeis99BW1eMcEA" name="_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_qj-8gHMDEeis99BW1eMcEA" name="_To__weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_9xQpsHMDEeis99BW1eMcEA" target="_6Um8oHMDEeis99BW1eMcEA" source="_yvx5QHMDEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_9xRQwHMDEeis99BW1eMcEA" name="Store Data_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_9xRQwXMDEeis99BW1eMcEA" name="Store Data_To__weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_DlVhIHMEEeis99BW1eMcEA" name="[Is24HoursSinceLastDataSubmission]" target="_AbRY4HMEEeis99BW1eMcEA" source="_6Um8oHMDEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_DlWIMHMEEeis99BW1eMcEA" name="_To_sendAggregatedDataToDoctor_call_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_DlWIMXMEEeis99BW1eMcEA" name="_To_sendAggregatedDataToDoctor_call_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_NqWCQHMEEeis99BW1eMcEA" name="else" target="_LrB14HMEEeis99BW1eMcEA" source="_6Um8oHMDEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_NqWpUHMEEeis99BW1eMcEA" name="_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_NqXQYHMEEeis99BW1eMcEA" name="_To__weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Rn3AsHMEEeis99BW1eMcEA" target="_LrB14HMEEeis99BW1eMcEA" source="_AbRY4HMEEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_Rn3nwHMEEeis99BW1eMcEA" name="sendAggregatedDataToDoctor_call_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_Rn3nwXMEEeis99BW1eMcEA" name="sendAggregatedDataToDoctor_call_To__weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_UyES4HMEEeis99BW1eMcEA" target="_SyJpkHMEEeis99BW1eMcEA" source="_LrB14HMEEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_UyE58HMEEeis99BW1eMcEA" name="_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_UyFhAHMEEeis99BW1eMcEA" name="_To__weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_agToEHMEEeis99BW1eMcEA" name="[Is1HourSinceLastUpdateCheck]" target="_WxlTkHMEEeis99BW1eMcEA" source="_SyJpkHMEEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_agUPIHMEEeis99BW1eMcEA" name="_To_checkForTreatmentUpdates_call_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_agUPIXMEEeis99BW1eMcEA" name="_To_checkForTreatmentUpdates_call_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_kOasIHMEEeis99BW1eMcEA" name="else" target="_hDMGQHMEEeis99BW1eMcEA" source="_SyJpkHMEEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_kObTMHMEEeis99BW1eMcEA" name="_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_kObTMXMEEeis99BW1eMcEA" name="_To__weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ltzbQHMEEeis99BW1eMcEA" target="_hDMGQHMEEeis99BW1eMcEA" source="_WxlTkHMEEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_lt0CUHMEEeis99BW1eMcEA" name="checkForTreatmentUpdates_call_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_lt0CUXMEEeis99BW1eMcEA" name="checkForTreatmentUpdates_call_To__weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_nd78IHMEEeis99BW1eMcEA" target="_RxepsDenEemlAtv87Z4J8A" source="_hDMGQHMEEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_nd78IXMEEeis99BW1eMcEA" name="_To_Evaluate Health Status_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_nd78InMEEeis99BW1eMcEA" name="_To_Evaluate Health Status_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_yh4xwHMEEeis99BW1eMcEA" target="_i_yLQHMDEeis99BW1eMcEA" source="_N0l1UHMCEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_yh4xwXMEEeis99BW1eMcEA" name="callAmbulance_call_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_yh5Y0HMEEeis99BW1eMcEA" name="callAmbulance_call_To__weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ty6VoHMOEeis99BW1eMcEA" target="_yRz1wHMBEeis99BW1eMcEA" source="_lsC8MHMOEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_ty68sHMOEeis99BW1eMcEA" name="_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_ty7jwHMOEeis99BW1eMcEA" name="_To__weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_uaCAAHMOEeis99BW1eMcEA" target="_eMG2UHMCEeis99BW1eMcEA" source="_lsC8MHMOEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_uaCnEHMOEeis99BW1eMcEA" name="_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_uaCnEXMOEeis99BW1eMcEA" name="_To__weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_NAqyIHMPEeis99BW1eMcEA" target="_N0l1UHMCEeis99BW1eMcEA" source="_IeckIHMPEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_NAqyIXMPEeis99BW1eMcEA" name="_To_callAmbulance_call_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_NAqyInMPEeis99BW1eMcEA" name="_To_callAmbulance_call_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_XDL_8HMPEeis99BW1eMcEA" target="_UhZ_sHMPEeis99BW1eMcEA" source="_i_yLQHMDEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_XDMnAHMPEeis99BW1eMcEA" name="_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_XDMnAXMPEeis99BW1eMcEA" name="_To__weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Xu-u8HMPEeis99BW1eMcEA" target="_UhZ_sHMPEeis99BW1eMcEA" source="_2iyP0HMOEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_Xu_WAHMPEeis99BW1eMcEA" name="_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_Xu_WAXMPEeis99BW1eMcEA" name="_To__weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_YQs78HMPEeis99BW1eMcEA" target="_yvx5QHMDEeis99BW1eMcEA" source="_UhZ_sHMPEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_YQtjAHMPEeis99BW1eMcEA" name="_To_Store Data_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_YQtjAXMPEeis99BW1eMcEA" name="_To_Store Data_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_CZ6lEOQ9EeiREf9mJem41A" target="_SSMh0OQ8EeiREf9mJem41A" source="_aE_5QHJNEei-Mrx8qSm6Bw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_CZ7MIOQ9EeiREf9mJem41A" name="CombineData_To_evaluateHealthStatus_call_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_CZ7MIeQ9EeiREf9mJem41A" name="CombineData_To_evaluateHealthStatus_call_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_E877cOQ9EeiREf9mJem41A" target="_lsC8MHMOEeis99BW1eMcEA" source="_SSMh0OQ8EeiREf9mJem41A">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_E877ceQ9EeiREf9mJem41A" name="evaluateHealthStatus_call_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_E88igOQ9EeiREf9mJem41A" name="evaluateHealthStatus_call_To__weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_Ga0xkOREEeiREf9mJem41A" name="[BloodSugarIsLow]" target="_uFPGwORDEeiREf9mJem41A" source="_yRz1wHMBEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_Ga1YoOREEeiREf9mJem41A" name="_To_adjustBasalRate_call_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_Ga1YoeREEeiREf9mJem41A" name="_To_adjustBasalRate_call_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_IFF7AOREEeiREf9mJem41A" target="_i_yLQHMDEeis99BW1eMcEA" source="_uFPGwORDEeiREf9mJem41A">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_IFGiEOREEeiREf9mJem41A" name="adjustBasalRate_call_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_IFGiEeREEeiREf9mJem41A" name="adjustBasalRate_call_To__weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_T62oEOREEeiREf9mJem41A" name="[BloodSugarIsHigh]" target="_OHAaIOREEeiREf9mJem41A" source="_yRz1wHMBEeis99BW1eMcEA">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_T62oEeREEeiREf9mJem41A" name="_To_startBolus_call_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_T62oEuREEeiREf9mJem41A" name="_To_startBolus_call_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_WA5ukOREEeiREf9mJem41A" target="_i_yLQHMDEeis99BW1eMcEA" source="_OHAaIOREEeiREf9mJem41A">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_WA5ukeREEeiREf9mJem41A" name="startBolus_call_To__guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_WA5ukuREEeiREf9mJem41A" name="startBolus_call_To__weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_-PC68DedEemlAtv87Z4J8A" target="_1ABmoDedEemlAtv87Z4J8A" source="_QwEtQG2XEeiXx8v9o2yVwg">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_-PC68TedEemlAtv87Z4J8A" name="Init_To_getHeartRate_call_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_-PDiADedEemlAtv87Z4J8A" name="Init_To_getHeartRate_call_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_-8oZsDedEemlAtv87Z4J8A" target="_FYylwPGKEeiwI62RnHt_sg" source="_1ABmoDedEemlAtv87Z4J8A">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_-8oZsTedEemlAtv87Z4J8A" name="getHeartRate_call_To_storeHeartRate_call_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_-8oZsjedEemlAtv87Z4J8A" name="getHeartRate_call_To_storeHeartRate_call_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="__hW3YDedEemlAtv87Z4J8A" target="_1ABmoDedEemlAtv87Z4J8A" source="_ejKYkHJLEei-Mrx8qSm6Bw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="__hW3YTedEemlAtv87Z4J8A" name="PT1S_To_getHeartRate_call_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="__hW3YjedEemlAtv87Z4J8A" name="PT1S_To_getHeartRate_call_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_a3RJgDenEemlAtv87Z4J8A" target="_hJYXcHJMEei-Mrx8qSm6Bw" source="_RxepsDenEemlAtv87Z4J8A">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_a3RJgTenEemlAtv87Z4J8A" name="PT1M_To_QueryData_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_a3RJgjenEemlAtv87Z4J8A" name="PT1M_To_QueryData_weight"/>
+      </edge>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_6nCG4DenEemlAtv87Z4J8A" target="_hJYXcHJMEei-Mrx8qSm6Bw" source="_QwEtQG2XEeiXx8v9o2yVwg"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_4xReEGaAEeiSn7XRQcELJw" name="Start" outgoing="_T3UyEG2XEeiXx8v9o2yVwg"/>
+      <node xmi:type="uml:ForkNode" xmi:id="_QwEtQG2XEeiXx8v9o2yVwg" name="Init" incoming="_T3UyEG2XEeiXx8v9o2yVwg" outgoing="_-PC68DedEemlAtv87Z4J8A _6nCG4DenEemlAtv87Z4J8A"/>
+      <node xmi:type="uml:AcceptEventAction" xmi:id="_ejKYkHJLEei-Mrx8qSm6Bw" name="PT1S" incoming="_Jj9lUHJMEei-Mrx8qSm6Bw" outgoing="__hW3YDedEemlAtv87Z4J8A">
+        <trigger xmi:id="_ejK_oHJLEei-Mrx8qSm6Bw" name="Trigger1" event="_ekLsQHJLEei-Mrx8qSm6Bw"/>
+      </node>
+      <node xmi:type="uml:ForkNode" xmi:id="_hJYXcHJMEei-Mrx8qSm6Bw" name="QueryData" incoming="_a3RJgDenEemlAtv87Z4J8A _6nCG4DenEemlAtv87Z4J8A" outgoing="_wRdJ0HJMEei-Mrx8qSm6Bw _5ThAMHJMEei-Mrx8qSm6Bw _Kq9-wHJOEei-Mrx8qSm6Bw"/>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_mnTYsHJMEei-Mrx8qSm6Bw" name="measureBloodSugar_call" incoming="_wRdJ0HJMEei-Mrx8qSm6Bw" outgoing="_fTwdIHJNEei-Mrx8qSm6Bw" operation="_bnZhsGZ8EeiSn7XRQcELJw">
+        <result xmi:id="_f4M40HMPEeis99BW1eMcEA" name="" type="_SxU44GZ8EeiSn7XRQcELJw"/>
+      </node>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_z3gqgHJMEei-Mrx8qSm6Bw" name="measureTemperature_call" incoming="_5ThAMHJMEei-Mrx8qSm6Bw" outgoing="_f85gwHJNEei-Mrx8qSm6Bw" operation="_P9ApEGZ6EeiSn7XRQcELJw">
+        <result xmi:id="_z3gqgXJMEei-Mrx8qSm6Bw" type="_X4za8GZ6EeiSn7XRQcELJw">
+          <name xsi:nil="true"/>
+        </result>
+      </node>
+      <node xmi:type="uml:JoinNode" xmi:id="_aE_5QHJNEei-Mrx8qSm6Bw" name="CombineData" incoming="_fTwdIHJNEei-Mrx8qSm6Bw _f85gwHJNEei-Mrx8qSm6Bw _SOzjoHJOEei-Mrx8qSm6Bw _ua3bYHLrEeiPAffOBZKOsg" outgoing="_CZ6lEOQ9EeiREf9mJem41A">
+        <joinSpec xmi:type="uml:LiteralBoolean" xmi:id="_aFAgUHJNEei-Mrx8qSm6Bw" name="Join1" value="true"/>
+      </node>
+      <node xmi:type="uml:DecisionNode" xmi:id="_FSNxYHJOEei-Mrx8qSm6Bw" name="" incoming="_Kq9-wHJOEei-Mrx8qSm6Bw" outgoing="_Pu06MHJOEei-Mrx8qSm6Bw _ua3bYHLrEeiPAffOBZKOsg"/>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_NYDQEHJOEei-Mrx8qSm6Bw" name="measureBloodPressureStd_call" incoming="_Pu06MHJOEei-Mrx8qSm6Bw" outgoing="_SOzjoHJOEei-Mrx8qSm6Bw" operation="_9I7WEHJNEei-Mrx8qSm6Bw">
+        <result xmi:id="_NYDQEXJOEei-Mrx8qSm6Bw" type="_JlQAUGZ7EeiSn7XRQcELJw">
+          <name xsi:nil="true"/>
+        </result>
+      </node>
+      <node xmi:type="uml:DecisionNode" xmi:id="_yRz1wHMBEeis99BW1eMcEA" name="" incoming="_ty6VoHMOEeis99BW1eMcEA" outgoing="_XRKdcHMCEeis99BW1eMcEA _qj-VcHMDEeis99BW1eMcEA _Ga0xkOREEeiREf9mJem41A _T62oEOREEeiREf9mJem41A"/>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_N0l1UHMCEeis99BW1eMcEA" name="callAmbulance_call" incoming="_NAqyIHMPEeis99BW1eMcEA" outgoing="_yh4xwHMEEeis99BW1eMcEA" operation="_ynXJoHLuEeiPAffOBZKOsg"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_eMG2UHMCEeis99BW1eMcEA" name="" incoming="_uaCAAHMOEeis99BW1eMcEA" outgoing="_Mi8KwHMDEeis99BW1eMcEA _lNn70HMDEeis99BW1eMcEA"/>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_F-aGwHMDEeis99BW1eMcEA" name="measureBloodPressureEmergency_call" incoming="_QsXeQHMDEeis99BW1eMcEA" outgoing="_auuUAHMDEeis99BW1eMcEA" operation="_9I7WEHJNEei-Mrx8qSm6Bw">
+        <result xmi:id="_F-at0HMDEeis99BW1eMcEA" type="_JlQAUGZ7EeiSn7XRQcELJw">
+          <name xsi:nil="true"/>
+        </result>
+      </node>
+      <node xmi:type="uml:DecisionNode" xmi:id="_KxkTwHMDEeis99BW1eMcEA" name="" incoming="_Mi8KwHMDEeis99BW1eMcEA" outgoing="_QsXeQHMDEeis99BW1eMcEA _YgrvIHMDEeis99BW1eMcEA"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_VxqkIHMDEeis99BW1eMcEA" name="" incoming="_YgrvIHMDEeis99BW1eMcEA _auuUAHMDEeis99BW1eMcEA" outgoing="_d6DAgHMDEeis99BW1eMcEA _l_myYHMDEeis99BW1eMcEA"/>
+      <node xmi:type="uml:MergeNode" xmi:id="_i_yLQHMDEeis99BW1eMcEA" name="" incoming="_qj-VcHMDEeis99BW1eMcEA _yh4xwHMEEeis99BW1eMcEA _IFF7AOREEeiREf9mJem41A _WA5ukOREEeiREf9mJem41A" outgoing="_XDL_8HMPEeis99BW1eMcEA"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_yvx5QHMDEeis99BW1eMcEA" name="Store Data" incoming="_YQs78HMPEeis99BW1eMcEA" outgoing="_9xQpsHMDEeis99BW1eMcEA">
+        <body>// TODO body of OpaqueAction4</body>
+      </node>
+      <node xmi:type="uml:DecisionNode" xmi:id="_6Um8oHMDEeis99BW1eMcEA" name="" incoming="_9xQpsHMDEeis99BW1eMcEA" outgoing="_DlVhIHMEEeis99BW1eMcEA _NqWCQHMEEeis99BW1eMcEA"/>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_AbRY4HMEEeis99BW1eMcEA" name="sendAggregatedDataToDoctor_call" incoming="_DlVhIHMEEeis99BW1eMcEA" outgoing="_Rn3AsHMEEeis99BW1eMcEA" operation="_i4nY0HLuEeiPAffOBZKOsg"/>
+      <node xmi:type="uml:MergeNode" xmi:id="_LrB14HMEEeis99BW1eMcEA" name="" incoming="_NqWCQHMEEeis99BW1eMcEA _Rn3AsHMEEeis99BW1eMcEA" outgoing="_UyES4HMEEeis99BW1eMcEA"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_SyJpkHMEEeis99BW1eMcEA" name="" incoming="_UyES4HMEEeis99BW1eMcEA" outgoing="_agToEHMEEeis99BW1eMcEA _kOasIHMEEeis99BW1eMcEA"/>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_WxlTkHMEEeis99BW1eMcEA" name="checkForTreatmentUpdates_call" incoming="_agToEHMEEeis99BW1eMcEA" outgoing="_ltzbQHMEEeis99BW1eMcEA" operation="_5ofqEHLuEeiPAffOBZKOsg"/>
+      <node xmi:type="uml:MergeNode" xmi:id="_hDMGQHMEEeis99BW1eMcEA" name="" incoming="_kOasIHMEEeis99BW1eMcEA _ltzbQHMEEeis99BW1eMcEA" outgoing="_nd78IHMEEeis99BW1eMcEA"/>
+      <node xmi:type="uml:ForkNode" xmi:id="_lsC8MHMOEeis99BW1eMcEA" name="" incoming="_E877cOQ9EeiREf9mJem41A" outgoing="_ty6VoHMOEeis99BW1eMcEA _uaCAAHMOEeis99BW1eMcEA"/>
+      <node xmi:type="uml:MergeNode" xmi:id="_2iyP0HMOEeis99BW1eMcEA" name="" incoming="_lNn70HMDEeis99BW1eMcEA _l_myYHMDEeis99BW1eMcEA" outgoing="_Xu-u8HMPEeis99BW1eMcEA"/>
+      <node xmi:type="uml:MergeNode" xmi:id="_IeckIHMPEeis99BW1eMcEA" name="" incoming="_d6DAgHMDEeis99BW1eMcEA _XRKdcHMCEeis99BW1eMcEA" outgoing="_NAqyIHMPEeis99BW1eMcEA"/>
+      <node xmi:type="uml:JoinNode" xmi:id="_UhZ_sHMPEeis99BW1eMcEA" name="" incoming="_XDL_8HMPEeis99BW1eMcEA _Xu-u8HMPEeis99BW1eMcEA" outgoing="_YQs78HMPEeis99BW1eMcEA">
+        <joinSpec xmi:type="uml:LiteralBoolean" xmi:id="_UhamwHMPEeis99BW1eMcEA" name="Join2" value="true"/>
+      </node>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_SSMh0OQ8EeiREf9mJem41A" name="evaluateHealthStatus_call" incoming="_CZ6lEOQ9EeiREf9mJem41A" outgoing="_E877cOQ9EeiREf9mJem41A" operation="_Pt_eoHJMEei-Mrx8qSm6Bw">
+        <target xmi:id="_SSOXAOQ8EeiREf9mJem41A" name="target" type="_MnYTAHJMEei-Mrx8qSm6Bw"/>
+      </node>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_uFPGwORDEeiREf9mJem41A" name="adjustBasalRate_call" incoming="_Ga0xkOREEeiREf9mJem41A" outgoing="_IFF7AOREEeiREf9mJem41A" operation="_emhocGaAEeiSn7XRQcELJw">
+        <argument xmi:id="_uFPt0ORDEeiREf9mJem41A" name="rate" type="_-FN5YGZ_EeiSn7XRQcELJw"/>
+        <target xmi:id="_uFPt0eRDEeiREf9mJem41A" name="target" type="_ktbSEGZ8EeiSn7XRQcELJw"/>
+      </node>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_OHAaIOREEeiREf9mJem41A" name="startBolus_call" incoming="_T62oEOREEeiREf9mJem41A" outgoing="_WA5ukOREEeiREf9mJem41A" operation="_VksbkGaAEeiSn7XRQcELJw">
+        <argument xmi:id="_OHAaIeREEeiREf9mJem41A" name="bolus" type="_YmzMkGZ-EeiSn7XRQcELJw"/>
+        <target xmi:id="_OHAaIuREEeiREf9mJem41A" name="target" type="_ktbSEGZ8EeiSn7XRQcELJw"/>
+      </node>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_FYylwPGKEeiwI62RnHt_sg" name="storeHeartRate_call" incoming="_-8oZsDedEemlAtv87Z4J8A" outgoing="_Jj9lUHJMEei-Mrx8qSm6Bw" operation="_L0pEUPGJEeiwI62RnHt_sg">
+        <argument xmi:id="_FYylwfGKEeiwI62RnHt_sg" name="timestamp">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </argument>
+        <argument xmi:id="_FYylwvGKEeiwI62RnHt_sg" name="bpm">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </argument>
+      </node>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_1ABmoDedEemlAtv87Z4J8A" name="getHeartRate_call" incoming="_-PC68DedEemlAtv87Z4J8A __hW3YDedEemlAtv87Z4J8A" outgoing="_-8oZsDedEemlAtv87Z4J8A" operation="_yrLvoDdwEem5srB5C3LdpQ">
+        <result xmi:id="_1ACNsDedEemlAtv87Z4J8A">
+          <name xsi:nil="true"/>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+        </result>
+      </node>
+      <node xmi:type="uml:AcceptEventAction" xmi:id="_RxepsDenEemlAtv87Z4J8A" name="PT1M" incoming="_nd78IHMEEeis99BW1eMcEA" outgoing="_a3RJgDenEemlAtv87Z4J8A">
+        <trigger xmi:id="_RxepsTenEemlAtv87Z4J8A" name="Trigger1" event="_RxepsjenEemlAtv87Z4J8A"/>
+      </node>
+    </packagedElement>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_ekLsQHJLEei-Mrx8qSm6Bw" name="TimeEvent1"/>
+    <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_5jDXkG2XEeiXx8v9o2yVwg" name="ChangeEvent1"/>
+    <packagedElement xmi:type="uml:Package" xmi:id="_vOKrIHLsEeiPAffOBZKOsg" name="Sensors">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_zgN1IGZ1EeiSn7XRQcELJw" name="HeartRateSensor" visibility="public">
+        <generalization xmi:id="_-liqIGZ9EeiSn7XRQcELJw" general="_wxJGIGZ9EeiSn7XRQcELJw"/>
+        <ownedOperation xmi:id="_yrLvoDdwEem5srB5C3LdpQ" name="getHeartRate" visibility="public">
+          <ownedParameter xmi:id="_rHBhMDedEemlAtv87Z4J8A" direction="return">
+            <name xsi:nil="true"/>
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_NUkAIGZ6EeiSn7XRQcELJw" name="TemperatureSensor" visibility="public">
+        <generalization xmi:id="_ApnasGZ-EeiSn7XRQcELJw" general="_wxJGIGZ9EeiSn7XRQcELJw"/>
+        <ownedOperation xmi:id="_P9ApEGZ6EeiSn7XRQcELJw" name="measureTemperature" visibility="public">
+          <ownedParameter xmi:id="_SdZiMGZ6EeiSn7XRQcELJw" type="_X4za8GZ6EeiSn7XRQcELJw" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_BnzzMGZ8EeiSn7XRQcELJw" name="BloodSugarSensor" visibility="public">
+        <generalization xmi:id="_Ba34gGZ-EeiSn7XRQcELJw" general="_wxJGIGZ9EeiSn7XRQcELJw"/>
+        <ownedOperation xmi:id="_bnZhsGZ8EeiSn7XRQcELJw" name="measureBloodSugar" visibility="public">
+          <ownedParameter xmi:id="_ekBD0GZ8EeiSn7XRQcELJw" type="_SxU44GZ8EeiSn7XRQcELJw" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_1MhgMHJNEei-Mrx8qSm6Bw" name="BloodPressureSensor" visibility="public">
+        <generalization xmi:id="_8Vj_cHJNEei-Mrx8qSm6Bw" general="_wxJGIGZ9EeiSn7XRQcELJw"/>
+        <ownedOperation xmi:id="_9I7WEHJNEei-Mrx8qSm6Bw" name="measureBloodPressure" visibility="public">
+          <ownedParameter xmi:id="__wo_MHJNEei-Mrx8qSm6Bw" type="_JlQAUGZ7EeiSn7XRQcELJw" direction="return">
+            <name xsi:nil="true"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <profileApplication xmi:id="_inCQwAIhEem2TLmWfhryqQ">
+        <eAnnotations xmi:id="_inC30AIhEem2TLmWfhryqQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="../FogUMLProfile/Fog.profile.uml#_na_QoQCwEemUUuzUq75umw"/>
+        </eAnnotations>
+        <appliedProfile href="../FogUMLProfile/Fog.profile.uml#_64pWQAB7Eemhcc6V9EGs0g"/>
+      </profileApplication>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_5IeYIHLsEeiPAffOBZKOsg" name="BAN">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_wxJGIGZ9EeiSn7XRQcELJw" name="BANDevice" visibility="public">
+        <ownedOperation xmi:id="_1lqlEGZ9EeiSn7XRQcELJw" name="getBatteryLevel" visibility="public">
+          <ownedParameter xmi:id="_7pl2YGZ9EeiSn7XRQcELJw" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_9KAT4HLsEeiPAffOBZKOsg" name="Treatment">
+      <packagedElement xmi:type="uml:Interface" xmi:id="_ktbSEGZ8EeiSn7XRQcELJw" name="InsulinPump" visibility="public">
+        <generalization xmi:id="_NacB0GZ-EeiSn7XRQcELJw" general="_wxJGIGZ9EeiSn7XRQcELJw"/>
+        <ownedAttribute xmi:id="_7X7boOp0EeiqQN8yHKzUpw" name="currentState" visibility="protected" type="_eyVFQGZ_EeiSn7XRQcELJw"/>
+        <ownedOperation xmi:id="_GPUpgGZ_EeiSn7XRQcELJw" name="setCurrentTime" visibility="public">
+          <ownedParameter xmi:id="_I-V0gGZ_EeiSn7XRQcELJw" name="timestamp">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_Ql3xIGaAEeiSn7XRQcELJw" name="getCurrentState" visibility="public">
+          <ownedParameter xmi:id="_SpDw4GaAEeiSn7XRQcELJw" type="_eyVFQGZ_EeiSn7XRQcELJw" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_VksbkGaAEeiSn7XRQcELJw" name="startBolus" visibility="public" precondition="_NQjqEOp1EeiqQN8yHKzUpw">
+          <ownedRule xmi:id="_NQjqEOp1EeiqQN8yHKzUpw" name="preStartBolus">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_wwkAYORKEeiREf9mJem41A" name="constraintSpec">
+              <language>OCL</language>
+              <body>&#xD;
+-- There is currently no other bolus being administered&#xD;
+self.currentState.bolus = null and&#xD;
+-- The last bolus ended at least one hour ago&#xD;
+self.currentState.currentTime - self.currentState.timeLastBolusEnded >= 3600000 and&#xD;
+-- This bolus will not exceed the max insulin allowed per hour&#xD;
+self.currentState.insulinUnitsAdministeredLastHour + bolus.insulinUnits &lt;= self.currentState.treatmentPlan.maxInsulinUnitsPerHour and&#xD;
+-- This bolus will not exceed the max insulin allowed per day&#xD;
+self.currentState.insulinUnitsAdministeredLast24Hours + bolus.insulinUnits &lt;= self.currentState.treatmentPlan.maxInsulinUnitsPerDay</body>
+            </specification>
+          </ownedRule>
+          <ownedParameter xmi:id="_Yr0kkGaAEeiSn7XRQcELJw" name="bolus" type="_YmzMkGZ-EeiSn7XRQcELJw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_emhocGaAEeiSn7XRQcELJw" name="adjustBasalRate" visibility="public" precondition="_-ukmUOp_EeiqQN8yHKzUpw">
+          <ownedRule xmi:id="_-ukmUOp_EeiqQN8yHKzUpw" name="preAdjustBasalRate">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_ApuEYOqAEeiqQN8yHKzUpw" name="constraintSpec">
+              <language>OCL</language>
+              <body>rate.insulinUnitsPerHour >= self.currentState.treatmentPlan.minHourlyBasalRate and&#xD;
+    rate.insulinUnitsPerHour &lt;= self.currentState.treatmentPlan.maxHourlyBasalRate</body>
+            </specification>
+          </ownedRule>
+          <ownedParameter xmi:id="_gpXC4GaAEeiSn7XRQcELJw" name="rate" type="_-FN5YGZ_EeiSn7XRQcELJw"/>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_34am0NSGEei0zfCELeQRrA" name="TreatmentPlan" visibility="public">
+        <ownedRule xmi:id="_uXecUOT-EeiIg9CCvPYGkA" name="basalRateLimits">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_yHr-kOT-EeiIg9CCvPYGkA" name="constraintSpec">
+            <language>OCL</language>
+            <body>self.basalRate.insulinUnitsPerHour >= self.minHourlyBasalRate and&#xD;
+    self.basalRate.insulinUnitsPerHour &lt;= self.maxHourlyBasalRate</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_4588kOT-EeiIg9CCvPYGkA" name="maxHourlyBasalRate">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_5yXLQOT-EeiIg9CCvPYGkA" name="constraintSpec">
+            <language>OCL</language>
+            <body>self.maxHourlyBasalRate &lt;= self.maxInsulinUnitsPerHour and&#xD;
+    self.maxHourlyBasalRate * 24 &lt; self.maxInsulinUnitsPerDay</body>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:id="_JlBLsOT_EeiIg9CCvPYGkA" name="maxBolus">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_LQoY8OT_EeiIg9CCvPYGkA" name="constraintSpec">
+            <language>OCL</language>
+            <body>self.bolus.insulinUnits &lt;= self.maxUnitsPerBolus</body>
+          </specification>
+        </ownedRule>
+        <ownedAttribute xmi:id="_anc0AOQlEeigWPGFTFB4cA" name="maxInsulinUnitsPerHour" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_andbEOQlEeigWPGFTFB4cA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_andbEeQlEeigWPGFTFB4cA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_GocsoNSHEei0zfCELeQRrA" name="maxInsulinUnitsPerDay" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GocsodSHEei0zfCELeQRrA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GocsotSHEei0zfCELeQRrA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_9Y7HgOQoEeigWPGFTFB4cA" name="minHourlyBasalRate" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_9Y7ukOQoEeigWPGFTFB4cA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_9Y7ukeQoEeigWPGFTFB4cA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_BQzYAOQpEeigWPGFTFB4cA" name="maxHourlyBasalRate" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BQzYAeQpEeigWPGFTFB4cA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BQzYAuQpEeigWPGFTFB4cA" value="1"/>
+        </ownedAttribute>
+        <ownedAttribute xmi:id="_5jzd0OQtEeigWPGFTFB4cA" name="maxUnitsPerBolus" visibility="public">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5jzd0eQtEeigWPGFTFB4cA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5jzd0uQtEeigWPGFTFB4cA" value="1"/>
+        </ownedAttribute>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_Qyzn0NSHEei0zfCELeQRrA" memberEnd="_Qyzn0dSHEei0zfCELeQRrA _Qyzn1NSHEei0zfCELeQRrA" navigableOwnedEnd="_Qyzn1NSHEei0zfCELeQRrA">
+        <ownedEnd xmi:id="_Qyzn0dSHEei0zfCELeQRrA" name="treatmentPlan" type="_34am0NSGEei0zfCELeQRrA" association="_Qyzn0NSHEei0zfCELeQRrA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qyzn0tSHEei0zfCELeQRrA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qyzn09SHEei0zfCELeQRrA" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="_Qyzn1NSHEei0zfCELeQRrA" name="basalRate" type="_-FN5YGZ_EeiSn7XRQcELJw" aggregation="composite" association="_Qyzn0NSHEei0zfCELeQRrA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Qyzn1dSHEei0zfCELeQRrA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Qyzn1tSHEei0zfCELeQRrA" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_XITxUNSHEei0zfCELeQRrA" memberEnd="_XIc7QNSHEei0zfCELeQRrA _XIc7Q9SHEei0zfCELeQRrA" navigableOwnedEnd="_XIc7Q9SHEei0zfCELeQRrA">
+        <ownedEnd xmi:id="_XIc7QNSHEei0zfCELeQRrA" name="treatmentPlan" type="_34am0NSGEei0zfCELeQRrA" association="_XITxUNSHEei0zfCELeQRrA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIc7QdSHEei0zfCELeQRrA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XIc7QtSHEei0zfCELeQRrA" value="1"/>
+        </ownedEnd>
+        <ownedEnd xmi:id="_XIc7Q9SHEei0zfCELeQRrA" name="bolus" type="_YmzMkGZ-EeiSn7XRQcELJw" aggregation="shared" association="_XITxUNSHEei0zfCELeQRrA">
+          <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_XIc7RNSHEei0zfCELeQRrA" value="1"/>
+          <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_XIc7RdSHEei0zfCELeQRrA" value="1"/>
+        </ownedEnd>
+      </packagedElement>
+      <profileApplication xmi:id="_AxJe8AIiEem2TLmWfhryqQ">
+        <eAnnotations xmi:id="_AxJe8QIiEem2TLmWfhryqQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="../FogUMLProfile/Fog.profile.uml#_na_QoQCwEemUUuzUq75umw"/>
+        </eAnnotations>
+        <appliedProfile href="../FogUMLProfile/Fog.profile.uml#_64pWQAB7Eemhcc6V9EGs0g"/>
+      </profileApplication>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Be7swHLtEeiPAffOBZKOsg" name="Monitoring">
+      <packagedElement xmi:type="uml:Class" xmi:id="_MnYTAHJMEei-Mrx8qSm6Bw" name="HealthMonitor" visibility="public">
+        <ownedOperation xmi:id="_Pt_eoHJMEei-Mrx8qSm6Bw" name="evaluateHealthStatus" visibility="public"/>
+        <ownedOperation xmi:id="_i4nY0HLuEeiPAffOBZKOsg" name="sendAggregatedDataToDoctor" visibility="public"/>
+        <ownedOperation xmi:id="_ynXJoHLuEeiPAffOBZKOsg" name="callAmbulance" visibility="public"/>
+        <ownedOperation xmi:id="_5ofqEHLuEeiPAffOBZKOsg" name="checkForTreatmentUpdates" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_eigIAA0cEem0BPSG1eBUYQ" name="HealthDataStore" visibility="public">
+        <ownedOperation xmi:id="_L0pEUPGJEeiwI62RnHt_sg" name="storeHeartRate" visibility="public">
+          <ownedParameter xmi:id="_L0pEUfGJEeiwI62RnHt_sg" name="timestamp">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_L0pEUvGJEeiwI62RnHt_sg" name="bpm">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_L0pEU_GJEeiwI62RnHt_sg" name="storeBodyTemperature" visibility="public">
+          <ownedParameter xmi:id="_L0pEVPGJEeiwI62RnHt_sg" name="timestamp">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_L0pEVfGJEeiwI62RnHt_sg" name="temperature" type="_X4za8GZ6EeiSn7XRQcELJw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_L0pEVvGJEeiwI62RnHt_sg" name="storeBloodSugarLevel" visibility="public">
+          <ownedParameter xmi:id="_L0pEV_GJEeiwI62RnHt_sg" name="timestamp">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_L0pEWPGJEeiwI62RnHt_sg" name="sugarLevel" type="_SxU44GZ8EeiSn7XRQcELJw"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_L0pEWfGJEeiwI62RnHt_sg" name="storeBloodPressure" visibility="public">
+          <ownedParameter xmi:id="_L0pEWvGJEeiwI62RnHt_sg" name="timestamp">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          </ownedParameter>
+          <ownedParameter xmi:id="_L0pEW_GJEeiwI62RnHt_sg" name="bloodPressure" type="_JlQAUGZ7EeiSn7XRQcELJw"/>
+        </ownedOperation>
+      </packagedElement>
+      <profileApplication xmi:id="_Y8WUIAIhEem2TLmWfhryqQ">
+        <eAnnotations xmi:id="_Y8WUIQIhEem2TLmWfhryqQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+          <references xmi:type="ecore:EPackage" href="../FogUMLProfile/Fog.profile.uml#_na_QoQCwEemUUuzUq75umw"/>
+        </eAnnotations>
+        <appliedProfile href="../FogUMLProfile/Fog.profile.uml#_64pWQAB7Eemhcc6V9EGs0g"/>
+      </profileApplication>
+    </packagedElement>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_RxepsjenEemlAtv87Z4J8A" name="TimeEvent2"/>
+    <profileApplication xmi:id="_YFreEACxEemUUuzUq75umw">
+      <eAnnotations xmi:id="_YFreEQCxEemUUuzUq75umw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="../FogUMLProfile/Fog.profile.uml#_na_QoQCwEemUUuzUq75umw"/>
+      </eAnnotations>
+      <appliedProfile href="../FogUMLProfile/Fog.profile.uml#_64pWQAB7Eemhcc6V9EGs0g"/>
+    </profileApplication>
+  </uml:Model>
+  <Fog:DataModel xmi:id="_aAPGQACxEemUUuzUq75umw" base_Package="_cuN-AHLsEeiPAffOBZKOsg"/>
+  <Fog:DataModel xmi:id="_b-FTAACxEemUUuzUq75umw" base_Class="_34am0NSGEei0zfCELeQRrA"/>
+  <Fog:ActivityRealization xmi:id="_diUs8ACxEemUUuzUq75umw" base_Package="_Be7swHLtEeiPAffOBZKOsg" realizedActivity="_6DlMwGZ7EeiSn7XRQcELJw"/>
+  <Fog:FogDevice xmi:id="_Y8XiQAIhEem2TLmWfhryqQ" cpu="x86_32bit" targetLanguage="Java" base_Package="_Be7swHLtEeiPAffOBZKOsg"/>
+  <Fog:FogDevice xmi:id="_inC30QIhEem2TLmWfhryqQ" cpu="MIPS_32bit" targetLanguage="Java" base_Interface="_NUkAIGZ6EeiSn7XRQcELJw"/>
+  <Fog:FogDevice xmi:id="_lcmIoAIhEem2TLmWfhryqQ" base_Interface="_BnzzMGZ8EeiSn7XRQcELJw"/>
+  <Fog:FogDevice xmi:id="_req_0AIhEem2TLmWfhryqQ" cpu="ARM_32bit" targetLanguage="Java" base_Interface="_1MhgMHJNEei-Mrx8qSm6Bw"/>
+  <Fog:FogDevice xmi:id="_vlH30AIhEem2TLmWfhryqQ" base_Interface="_zgN1IGZ1EeiSn7XRQcELJw"/>
+  <Fog:FogDevice xmi:id="_AxKGAQIiEem2TLmWfhryqQ" base_Interface="_ktbSEGZ8EeiSn7XRQcELJw"/>
+</xmi:XMI>
