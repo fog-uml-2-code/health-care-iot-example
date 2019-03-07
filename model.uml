@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Fog="http:///pusztai/thomas/architecture/fog/1.0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///pusztai/thomas/architecture/fog/1.0 ../FogUMLProfile/Fog.profile.uml#_na_QoQCwEemUUuzUq75umw">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Fog="http:///pusztai/thomas/architecture/fog/1.1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///pusztai/thomas/architecture/fog/1.1 ../FogUMLProfile/Fog.profile.uml#_mzC3EED_Eemck8s7R8OXew">
   <uml:Model xmi:id="_4jEhcGZpEeiT6MBdX3sCxg" name="HealthCare">
     <packageImport xmi:id="_jnw8cGZ6EeiSn7XRQcELJw">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -401,7 +401,7 @@
       </packagedElement>
       <profileApplication xmi:id="_inCQwAIhEem2TLmWfhryqQ">
         <eAnnotations xmi:id="_inC30AIhEem2TLmWfhryqQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-          <references xmi:type="ecore:EPackage" href="../FogUMLProfile/Fog.profile.uml#_na_QoQCwEemUUuzUq75umw"/>
+          <references xmi:type="ecore:EPackage" href="../FogUMLProfile/Fog.profile.uml#_mzC3EED_Eemck8s7R8OXew"/>
         </eAnnotations>
         <appliedProfile href="../FogUMLProfile/Fog.profile.uml#_64pWQAB7Eemhcc6V9EGs0g"/>
       </profileApplication>
@@ -524,7 +524,7 @@ self.currentState.insulinUnitsAdministeredLast24Hours + bolus.insulinUnits &lt;=
       </packagedElement>
       <profileApplication xmi:id="_AxJe8AIiEem2TLmWfhryqQ">
         <eAnnotations xmi:id="_AxJe8QIiEem2TLmWfhryqQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-          <references xmi:type="ecore:EPackage" href="../FogUMLProfile/Fog.profile.uml#_na_QoQCwEemUUuzUq75umw"/>
+          <references xmi:type="ecore:EPackage" href="../FogUMLProfile/Fog.profile.uml#_mzC3EED_Eemck8s7R8OXew"/>
         </eAnnotations>
         <appliedProfile href="../FogUMLProfile/Fog.profile.uml#_64pWQAB7Eemhcc6V9EGs0g"/>
       </profileApplication>
@@ -566,7 +566,7 @@ self.currentState.insulinUnitsAdministeredLast24Hours + bolus.insulinUnits &lt;=
       </packagedElement>
       <profileApplication xmi:id="_Y8WUIAIhEem2TLmWfhryqQ">
         <eAnnotations xmi:id="_Y8WUIQIhEem2TLmWfhryqQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
-          <references xmi:type="ecore:EPackage" href="../FogUMLProfile/Fog.profile.uml#_na_QoQCwEemUUuzUq75umw"/>
+          <references xmi:type="ecore:EPackage" href="../FogUMLProfile/Fog.profile.uml#_mzC3EED_Eemck8s7R8OXew"/>
         </eAnnotations>
         <appliedProfile href="../FogUMLProfile/Fog.profile.uml#_64pWQAB7Eemhcc6V9EGs0g"/>
       </profileApplication>
@@ -574,7 +574,7 @@ self.currentState.insulinUnitsAdministeredLast24Hours + bolus.insulinUnits &lt;=
     <packagedElement xmi:type="uml:TimeEvent" xmi:id="_RxepsjenEemlAtv87Z4J8A" name="TimeEvent2"/>
     <profileApplication xmi:id="_YFreEACxEemUUuzUq75umw">
       <eAnnotations xmi:id="_YFreEQCxEemUUuzUq75umw" source="http://www.eclipse.org/uml2/2.0.0/UML">
-        <references xmi:type="ecore:EPackage" href="../FogUMLProfile/Fog.profile.uml#_na_QoQCwEemUUuzUq75umw"/>
+        <references xmi:type="ecore:EPackage" href="../FogUMLProfile/Fog.profile.uml#_mzC3EED_Eemck8s7R8OXew"/>
       </eAnnotations>
       <appliedProfile href="../FogUMLProfile/Fog.profile.uml#_64pWQAB7Eemhcc6V9EGs0g"/>
     </profileApplication>
