@@ -363,8 +363,9 @@
         <trigger xmi:id="_RxepsTenEemlAtv87Z4J8A" name="Trigger1" event="_RxepsjenEemlAtv87Z4J8A"/>
       </node>
     </packagedElement>
-    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_ekLsQHJLEei-Mrx8qSm6Bw" name="TimeEvent1"/>
-    <packagedElement xmi:type="uml:ChangeEvent" xmi:id="_5jDXkG2XEeiXx8v9o2yVwg" name="ChangeEvent1"/>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_ekLsQHJLEei-Mrx8qSm6Bw" name="TimeEvent1">
+      <when xmi:id="_Vw0aQEEBEemXF9o1KENqIw"/>
+    </packagedElement>
     <packagedElement xmi:type="uml:Package" xmi:id="_vOKrIHLsEeiPAffOBZKOsg" name="Sensors">
       <packagedElement xmi:type="uml:Interface" xmi:id="_zgN1IGZ1EeiSn7XRQcELJw" name="HeartRateSensor" visibility="public">
         <generalization xmi:id="_-liqIGZ9EeiSn7XRQcELJw" general="_wxJGIGZ9EeiSn7XRQcELJw"/>
@@ -571,7 +572,9 @@ self.currentState.insulinUnitsAdministeredLast24Hours + bolus.insulinUnits &lt;=
         <appliedProfile href="../FogUMLProfile/Fog.profile.uml#_64pWQAB7Eemhcc6V9EGs0g"/>
       </profileApplication>
     </packagedElement>
-    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_RxepsjenEemlAtv87Z4J8A" name="TimeEvent2"/>
+    <packagedElement xmi:type="uml:TimeEvent" xmi:id="_RxepsjenEemlAtv87Z4J8A" name="TimeEvent2">
+      <when xmi:id="_fIDPYEEBEemXF9o1KENqIw"/>
+    </packagedElement>
     <profileApplication xmi:id="_YFreEACxEemUUuzUq75umw">
       <eAnnotations xmi:id="_YFreEQCxEemUUuzUq75umw" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="../FogUMLProfile/Fog.profile.uml#_mzC3EED_Eemck8s7R8OXew"/>
