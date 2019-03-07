@@ -293,11 +293,13 @@
       <node xmi:type="uml:ForkNode" xmi:id="_hJYXcHJMEei-Mrx8qSm6Bw" name="QueryData" incoming="_a3RJgDenEemlAtv87Z4J8A _6nCG4DenEemlAtv87Z4J8A" outgoing="_wRdJ0HJMEei-Mrx8qSm6Bw _5ThAMHJMEei-Mrx8qSm6Bw _Kq9-wHJOEei-Mrx8qSm6Bw"/>
       <node xmi:type="uml:CallOperationAction" xmi:id="_mnTYsHJMEei-Mrx8qSm6Bw" name="measureBloodSugar_call" incoming="_wRdJ0HJMEei-Mrx8qSm6Bw" outgoing="_fTwdIHJNEei-Mrx8qSm6Bw" operation="_bnZhsGZ8EeiSn7XRQcELJw">
         <result xmi:id="_f4M40HMPEeis99BW1eMcEA" name="" type="_SxU44GZ8EeiSn7XRQcELJw"/>
+        <target xmi:id="_LgeWYEECEemXF9o1KENqIw" name="target" type="_BnzzMGZ8EeiSn7XRQcELJw"/>
       </node>
       <node xmi:type="uml:CallOperationAction" xmi:id="_z3gqgHJMEei-Mrx8qSm6Bw" name="measureTemperature_call" incoming="_5ThAMHJMEei-Mrx8qSm6Bw" outgoing="_f85gwHJNEei-Mrx8qSm6Bw" operation="_P9ApEGZ6EeiSn7XRQcELJw">
         <result xmi:id="_z3gqgXJMEei-Mrx8qSm6Bw" type="_X4za8GZ6EeiSn7XRQcELJw">
           <name xsi:nil="true"/>
         </result>
+        <target xmi:id="_VDlEUEECEemXF9o1KENqIw" name="target" type="_NUkAIGZ6EeiSn7XRQcELJw"/>
       </node>
       <node xmi:type="uml:JoinNode" xmi:id="_aE_5QHJNEei-Mrx8qSm6Bw" name="CombineData" incoming="_fTwdIHJNEei-Mrx8qSm6Bw _f85gwHJNEei-Mrx8qSm6Bw _SOzjoHJOEei-Mrx8qSm6Bw _ua3bYHLrEeiPAffOBZKOsg" outgoing="_CZ6lEOQ9EeiREf9mJem41A">
         <joinSpec xmi:type="uml:LiteralBoolean" xmi:id="_aFAgUHJNEei-Mrx8qSm6Bw" name="Join1" value="true"/>
@@ -307,14 +309,18 @@
         <result xmi:id="_NYDQEXJOEei-Mrx8qSm6Bw" type="_JlQAUGZ7EeiSn7XRQcELJw">
           <name xsi:nil="true"/>
         </result>
+        <target xmi:id="_ZtTBcEECEemXF9o1KENqIw" name="target" type="_1MhgMHJNEei-Mrx8qSm6Bw"/>
       </node>
       <node xmi:type="uml:DecisionNode" xmi:id="_yRz1wHMBEeis99BW1eMcEA" name="" incoming="_ty6VoHMOEeis99BW1eMcEA" outgoing="_XRKdcHMCEeis99BW1eMcEA _qj-VcHMDEeis99BW1eMcEA _Ga0xkOREEeiREf9mJem41A _T62oEOREEeiREf9mJem41A"/>
-      <node xmi:type="uml:CallOperationAction" xmi:id="_N0l1UHMCEeis99BW1eMcEA" name="callAmbulance_call" incoming="_NAqyIHMPEeis99BW1eMcEA" outgoing="_yh4xwHMEEeis99BW1eMcEA" operation="_ynXJoHLuEeiPAffOBZKOsg"/>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_N0l1UHMCEeis99BW1eMcEA" name="callAmbulance_call" incoming="_NAqyIHMPEeis99BW1eMcEA" outgoing="_yh4xwHMEEeis99BW1eMcEA" operation="_ynXJoHLuEeiPAffOBZKOsg">
+        <target xmi:id="_eX-n4EECEemXF9o1KENqIw" name="target" type="_MnYTAHJMEei-Mrx8qSm6Bw"/>
+      </node>
       <node xmi:type="uml:DecisionNode" xmi:id="_eMG2UHMCEeis99BW1eMcEA" name="" incoming="_uaCAAHMOEeis99BW1eMcEA" outgoing="_Mi8KwHMDEeis99BW1eMcEA _lNn70HMDEeis99BW1eMcEA"/>
       <node xmi:type="uml:CallOperationAction" xmi:id="_F-aGwHMDEeis99BW1eMcEA" name="measureBloodPressureEmergency_call" incoming="_QsXeQHMDEeis99BW1eMcEA" outgoing="_auuUAHMDEeis99BW1eMcEA" operation="_9I7WEHJNEei-Mrx8qSm6Bw">
         <result xmi:id="_F-at0HMDEeis99BW1eMcEA" type="_JlQAUGZ7EeiSn7XRQcELJw">
           <name xsi:nil="true"/>
         </result>
+        <target xmi:id="_jDgi4EECEemXF9o1KENqIw" name="target" type="_1MhgMHJNEei-Mrx8qSm6Bw"/>
       </node>
       <node xmi:type="uml:DecisionNode" xmi:id="_KxkTwHMDEeis99BW1eMcEA" name="" incoming="_Mi8KwHMDEeis99BW1eMcEA" outgoing="_QsXeQHMDEeis99BW1eMcEA _YgrvIHMDEeis99BW1eMcEA"/>
       <node xmi:type="uml:DecisionNode" xmi:id="_VxqkIHMDEeis99BW1eMcEA" name="" incoming="_YgrvIHMDEeis99BW1eMcEA _auuUAHMDEeis99BW1eMcEA" outgoing="_d6DAgHMDEeis99BW1eMcEA _l_myYHMDEeis99BW1eMcEA"/>
@@ -323,10 +329,14 @@
         <body>// TODO body of OpaqueAction4</body>
       </node>
       <node xmi:type="uml:DecisionNode" xmi:id="_6Um8oHMDEeis99BW1eMcEA" name="" incoming="_9xQpsHMDEeis99BW1eMcEA" outgoing="_DlVhIHMEEeis99BW1eMcEA _NqWCQHMEEeis99BW1eMcEA"/>
-      <node xmi:type="uml:CallOperationAction" xmi:id="_AbRY4HMEEeis99BW1eMcEA" name="sendAggregatedDataToDoctor_call" incoming="_DlVhIHMEEeis99BW1eMcEA" outgoing="_Rn3AsHMEEeis99BW1eMcEA" operation="_i4nY0HLuEeiPAffOBZKOsg"/>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_AbRY4HMEEeis99BW1eMcEA" name="sendAggregatedDataToDoctor_call" incoming="_DlVhIHMEEeis99BW1eMcEA" outgoing="_Rn3AsHMEEeis99BW1eMcEA" operation="_i4nY0HLuEeiPAffOBZKOsg">
+        <target xmi:id="_nPOVYEECEemXF9o1KENqIw" name="target" type="_MnYTAHJMEei-Mrx8qSm6Bw"/>
+      </node>
       <node xmi:type="uml:MergeNode" xmi:id="_LrB14HMEEeis99BW1eMcEA" name="" incoming="_NqWCQHMEEeis99BW1eMcEA _Rn3AsHMEEeis99BW1eMcEA" outgoing="_UyES4HMEEeis99BW1eMcEA"/>
       <node xmi:type="uml:DecisionNode" xmi:id="_SyJpkHMEEeis99BW1eMcEA" name="" incoming="_UyES4HMEEeis99BW1eMcEA" outgoing="_agToEHMEEeis99BW1eMcEA _kOasIHMEEeis99BW1eMcEA"/>
-      <node xmi:type="uml:CallOperationAction" xmi:id="_WxlTkHMEEeis99BW1eMcEA" name="checkForTreatmentUpdates_call" incoming="_agToEHMEEeis99BW1eMcEA" outgoing="_ltzbQHMEEeis99BW1eMcEA" operation="_5ofqEHLuEeiPAffOBZKOsg"/>
+      <node xmi:type="uml:CallOperationAction" xmi:id="_WxlTkHMEEeis99BW1eMcEA" name="checkForTreatmentUpdates_call" incoming="_agToEHMEEeis99BW1eMcEA" outgoing="_ltzbQHMEEeis99BW1eMcEA" operation="_5ofqEHLuEeiPAffOBZKOsg">
+        <target xmi:id="_p8QjYEECEemXF9o1KENqIw" type="_MnYTAHJMEei-Mrx8qSm6Bw"/>
+      </node>
       <node xmi:type="uml:MergeNode" xmi:id="_hDMGQHMEEeis99BW1eMcEA" name="" incoming="_kOasIHMEEeis99BW1eMcEA _ltzbQHMEEeis99BW1eMcEA" outgoing="_nd78IHMEEeis99BW1eMcEA"/>
       <node xmi:type="uml:ForkNode" xmi:id="_lsC8MHMOEeis99BW1eMcEA" name="" incoming="_E877cOQ9EeiREf9mJem41A" outgoing="_ty6VoHMOEeis99BW1eMcEA _uaCAAHMOEeis99BW1eMcEA"/>
       <node xmi:type="uml:MergeNode" xmi:id="_2iyP0HMOEeis99BW1eMcEA" name="" incoming="_lNn70HMDEeis99BW1eMcEA _l_myYHMDEeis99BW1eMcEA" outgoing="_Xu-u8HMPEeis99BW1eMcEA"/>
@@ -352,12 +362,14 @@
         <argument xmi:id="_FYylwvGKEeiwI62RnHt_sg" name="bpm">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         </argument>
+        <target xmi:id="_u_S_cEECEemXF9o1KENqIw" name="target" type="_eigIAA0cEem0BPSG1eBUYQ"/>
       </node>
       <node xmi:type="uml:CallOperationAction" xmi:id="_1ABmoDedEemlAtv87Z4J8A" name="getHeartRate_call" incoming="_-PC68DedEemlAtv87Z4J8A __hW3YDedEemlAtv87Z4J8A" outgoing="_-8oZsDedEemlAtv87Z4J8A" operation="_yrLvoDdwEem5srB5C3LdpQ">
         <result xmi:id="_1ACNsDedEemlAtv87Z4J8A">
           <name xsi:nil="true"/>
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
         </result>
+        <target xmi:id="_0onYYEECEemXF9o1KENqIw" name="target" type="_zgN1IGZ1EeiSn7XRQcELJw"/>
       </node>
       <node xmi:type="uml:AcceptEventAction" xmi:id="_RxepsDenEemlAtv87Z4J8A" name="PT1M" incoming="_nd78IHMEEeis99BW1eMcEA" outgoing="_a3RJgDenEemlAtv87Z4J8A">
         <trigger xmi:id="_RxepsTenEemlAtv87Z4J8A" name="Trigger1" event="_RxepsjenEemlAtv87Z4J8A"/>
