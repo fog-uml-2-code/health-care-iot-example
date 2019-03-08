@@ -598,9 +598,9 @@ self.currentState.insulinUnitsAdministeredLast24Hours + bolus.insulinUnits &lt;=
   <Fog:DataModel xmi:id="_b-FTAACxEemUUuzUq75umw" base_Class="_34am0NSGEei0zfCELeQRrA"/>
   <Fog:ActivityRealization xmi:id="_diUs8ACxEemUUuzUq75umw" base_Package="_Be7swHLtEeiPAffOBZKOsg" realizedActivity="_6DlMwGZ7EeiSn7XRQcELJw"/>
   <Fog:FogDevice xmi:id="_Y8XiQAIhEem2TLmWfhryqQ" cpu="x86_32bit" targetLanguage="Java" base_Package="_Be7swHLtEeiPAffOBZKOsg"/>
-  <Fog:FogDevice xmi:id="_inC30QIhEem2TLmWfhryqQ" cpu="MIPS_32bit" targetLanguage="Java" base_Interface="_NUkAIGZ6EeiSn7XRQcELJw"/>
-  <Fog:FogDevice xmi:id="_lcmIoAIhEem2TLmWfhryqQ" base_Interface="_BnzzMGZ8EeiSn7XRQcELJw"/>
+  <Fog:FogDevice xmi:id="_inC30QIhEem2TLmWfhryqQ" cpu="MIPS_32bit" base_Interface="_NUkAIGZ6EeiSn7XRQcELJw"/>
+  <Fog:FogDevice xmi:id="_lcmIoAIhEem2TLmWfhryqQ" targetLanguage="Java" base_Interface="_BnzzMGZ8EeiSn7XRQcELJw"/>
   <Fog:FogDevice xmi:id="_req_0AIhEem2TLmWfhryqQ" cpu="ARM_32bit" targetLanguage="Java" base_Interface="_1MhgMHJNEei-Mrx8qSm6Bw"/>
   <Fog:FogDevice xmi:id="_vlH30AIhEem2TLmWfhryqQ" base_Interface="_zgN1IGZ1EeiSn7XRQcELJw"/>
-  <Fog:FogDevice xmi:id="_AxKGAQIiEem2TLmWfhryqQ" base_Interface="_ktbSEGZ8EeiSn7XRQcELJw"/>
+  <Fog:FogDevice xmi:id="_AxKGAQIiEem2TLmWfhryqQ" targetLanguage="Java" base_Interface="_ktbSEGZ8EeiSn7XRQcELJw"/>
 </xmi:XMI>
