@@ -20,3 +20,5 @@ OCL constraints are used to ensure that the application operates within its defi
 The file `model.uml` contains the Eclipse UML2 model of the application.
 
 The file `representations.aird` contains the diagrams designed with UML Designer.
+
+The file `codeGeneration.properties` contains settings for the code generation.
