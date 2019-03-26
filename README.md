@@ -1,9 +1,9 @@
 # Health Care IoT Example
 
-This is the UML model for an example Body Area Network (BAN) IoT application, which serves as a case study for [FogUML2Code](https://github.com/fog-uml-2-code/fog-uml-2-code).
+This is the UML model for an example Body Area Network (BAN) IoT application, which serves as an example use case for [FogUML2Code](https://github.com/fog-uml-2-code/fog-uml-2-code).
 
 ## Disclaimer
-We would like to note that we are NOT medical doctors and that this application only serves as a theoretic case study for our software engineering approach.
+We would like to note that we are NOT medical doctors and that this application only serves as a theoretic example use case for our software engineering approach.
 
 ## Overview
 This health care BAN application can monitor vital signs such as blood sugar levels and heart rate, auto inject insulin through a pump device, or alert the hospital in case it is needed.
