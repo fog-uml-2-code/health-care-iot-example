@@ -29,7 +29,7 @@
       </packagedElement>
       <packagedElement xmi:type="uml:Class" xmi:id="_SxU44GZ8EeiSn7XRQcELJw" name="BloodSugarLevel" visibility="public">
         <ownedAttribute xmi:id="_UXXpoGZ8EeiSn7XRQcELJw" name="mmolPerLiter" visibility="public">
-          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
           <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_UXYQsGZ8EeiSn7XRQcELJw" value="1"/>
           <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_UXYQsWZ8EeiSn7XRQcELJw" value="1"/>
         </ownedAttribute>
