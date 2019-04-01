@@ -103,7 +103,7 @@
         </ownedEnd>
       </packagedElement>
     </packagedElement>
-    <packagedElement xmi:type="uml:Activity" xmi:id="_6DlMwGZ7EeiSn7XRQcELJw" name="HealthCare" node="_4xReEGaAEeiSn7XRQcELJw _QwEtQG2XEeiXx8v9o2yVwg _ejKYkHJLEei-Mrx8qSm6Bw _hJYXcHJMEei-Mrx8qSm6Bw _mnTYsHJMEei-Mrx8qSm6Bw _z3gqgHJMEei-Mrx8qSm6Bw _aE_5QHJNEei-Mrx8qSm6Bw _FSNxYHJOEei-Mrx8qSm6Bw _NYDQEHJOEei-Mrx8qSm6Bw _yRz1wHMBEeis99BW1eMcEA _N0l1UHMCEeis99BW1eMcEA _eMG2UHMCEeis99BW1eMcEA _F-aGwHMDEeis99BW1eMcEA _KxkTwHMDEeis99BW1eMcEA _VxqkIHMDEeis99BW1eMcEA _i_yLQHMDEeis99BW1eMcEA _yvx5QHMDEeis99BW1eMcEA _6Um8oHMDEeis99BW1eMcEA _AbRY4HMEEeis99BW1eMcEA _LrB14HMEEeis99BW1eMcEA _SyJpkHMEEeis99BW1eMcEA _WxlTkHMEEeis99BW1eMcEA _hDMGQHMEEeis99BW1eMcEA _lsC8MHMOEeis99BW1eMcEA _2iyP0HMOEeis99BW1eMcEA _IeckIHMPEeis99BW1eMcEA _UhZ_sHMPEeis99BW1eMcEA _SSMh0OQ8EeiREf9mJem41A _uFPGwORDEeiREf9mJem41A _OHAaIOREEeiREf9mJem41A _FYylwPGKEeiwI62RnHt_sg _1ABmoDedEemlAtv87Z4J8A _RxepsDenEemlAtv87Z4J8A">
+    <packagedElement xmi:type="uml:Activity" xmi:id="_6DlMwGZ7EeiSn7XRQcELJw" name="HealthCare" node="_4xReEGaAEeiSn7XRQcELJw _QwEtQG2XEeiXx8v9o2yVwg _ejKYkHJLEei-Mrx8qSm6Bw _hJYXcHJMEei-Mrx8qSm6Bw _mnTYsHJMEei-Mrx8qSm6Bw _z3gqgHJMEei-Mrx8qSm6Bw _aE_5QHJNEei-Mrx8qSm6Bw _FSNxYHJOEei-Mrx8qSm6Bw _NYDQEHJOEei-Mrx8qSm6Bw _yRz1wHMBEeis99BW1eMcEA _N0l1UHMCEeis99BW1eMcEA _eMG2UHMCEeis99BW1eMcEA _F-aGwHMDEeis99BW1eMcEA _KxkTwHMDEeis99BW1eMcEA _VxqkIHMDEeis99BW1eMcEA _i_yLQHMDEeis99BW1eMcEA _yvx5QHMDEeis99BW1eMcEA _6Um8oHMDEeis99BW1eMcEA _AbRY4HMEEeis99BW1eMcEA _LrB14HMEEeis99BW1eMcEA _SyJpkHMEEeis99BW1eMcEA _WxlTkHMEEeis99BW1eMcEA _hDMGQHMEEeis99BW1eMcEA _lsC8MHMOEeis99BW1eMcEA _2iyP0HMOEeis99BW1eMcEA _IeckIHMPEeis99BW1eMcEA _UhZ_sHMPEeis99BW1eMcEA _SSMh0OQ8EeiREf9mJem41A _uFPGwORDEeiREf9mJem41A _OHAaIOREEeiREf9mJem41A _FYylwPGKEeiwI62RnHt_sg _1ABmoDedEemlAtv87Z4J8A _RxepsDenEemlAtv87Z4J8A _57SmYFSfEemJwraxn9aZHw">
       <edge xmi:type="uml:ControlFlow" xmi:id="_T3UyEG2XEeiXx8v9o2yVwg" target="_QwEtQG2XEeiXx8v9o2yVwg" source="_4xReEGaAEeiSn7XRQcELJw">
         <guard xmi:type="uml:LiteralBoolean" xmi:id="_T3WAMG2XEeiXx8v9o2yVwg" name="Start_To_Init_guard" value="true"/>
         <weight xmi:type="uml:LiteralInteger" xmi:id="_T3XOUG2XEeiXx8v9o2yVwg" name="Start_To_Init_weight"/>
@@ -136,11 +136,11 @@
         <guard xmi:type="uml:LiteralBoolean" xmi:id="_Pu06MXJOEei-Mrx8qSm6Bw" name="LastBloodPressureCheckOlderThan1Hour_To_measureBloodPressure_call_guard" value="true"/>
         <weight xmi:type="uml:LiteralInteger" xmi:id="_Pu1hQHJOEei-Mrx8qSm6Bw" name="LastBloodPressureCheckOlderThan1Hour_To_measureBloodPressure_call_weight"/>
       </edge>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_SOzjoHJOEei-Mrx8qSm6Bw" target="_aE_5QHJNEei-Mrx8qSm6Bw" source="_NYDQEHJOEei-Mrx8qSm6Bw">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_SOzjoHJOEei-Mrx8qSm6Bw" target="_57SmYFSfEemJwraxn9aZHw" source="_NYDQEHJOEei-Mrx8qSm6Bw">
         <guard xmi:type="uml:LiteralBoolean" xmi:id="_SO0KsHJOEei-Mrx8qSm6Bw" name="measureBloodPressure_call_To_CombineData_guard" value="true"/>
         <weight xmi:type="uml:LiteralInteger" xmi:id="_SO0KsXJOEei-Mrx8qSm6Bw" name="measureBloodPressure_call_To_CombineData_weight"/>
       </edge>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_ua3bYHLrEeiPAffOBZKOsg" name="else" target="_aE_5QHJNEei-Mrx8qSm6Bw" source="_FSNxYHJOEei-Mrx8qSm6Bw">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ua3bYHLrEeiPAffOBZKOsg" name="else" target="_57SmYFSfEemJwraxn9aZHw" source="_FSNxYHJOEei-Mrx8qSm6Bw">
         <guard xmi:type="uml:LiteralBoolean" xmi:id="_ua4CcHLrEeiPAffOBZKOsg" name="_To_CombineData_guard" value="true"/>
         <weight xmi:type="uml:LiteralInteger" xmi:id="_ua4pgHLrEeiPAffOBZKOsg" name="_To_CombineData_weight"/>
       </edge>
@@ -285,6 +285,10 @@
         <weight xmi:type="uml:LiteralInteger" xmi:id="_a3RJgjenEemlAtv87Z4J8A" name="PT1M_To_QueryData_weight"/>
       </edge>
       <edge xmi:type="uml:ControlFlow" xmi:id="_6nCG4DenEemlAtv87Z4J8A" target="_hJYXcHJMEei-Mrx8qSm6Bw" source="_QwEtQG2XEeiXx8v9o2yVwg"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_FwCm0FSgEemJwraxn9aZHw" target="_aE_5QHJNEei-Mrx8qSm6Bw" source="_57SmYFSfEemJwraxn9aZHw">
+        <guard xmi:type="uml:LiteralBoolean" xmi:id="_FwCm0VSgEemJwraxn9aZHw" name="_To_CombineData_guard" value="true"/>
+        <weight xmi:type="uml:LiteralInteger" xmi:id="_FwDN4FSgEemJwraxn9aZHw" name="_To_CombineData_weight"/>
+      </edge>
       <node xmi:type="uml:InitialNode" xmi:id="_4xReEGaAEeiSn7XRQcELJw" name="Start" outgoing="_T3UyEG2XEeiXx8v9o2yVwg"/>
       <node xmi:type="uml:ForkNode" xmi:id="_QwEtQG2XEeiXx8v9o2yVwg" name="Init" incoming="_T3UyEG2XEeiXx8v9o2yVwg" outgoing="_-PC68DedEemlAtv87Z4J8A _6nCG4DenEemlAtv87Z4J8A"/>
       <node xmi:type="uml:AcceptEventAction" xmi:id="_ejKYkHJLEei-Mrx8qSm6Bw" name="PT1S" incoming="_Jj9lUHJMEei-Mrx8qSm6Bw" outgoing="__hW3YDedEemlAtv87Z4J8A">
@@ -301,7 +305,7 @@
         </result>
         <target xmi:id="_VDlEUEECEemXF9o1KENqIw" name="target" type="_NUkAIGZ6EeiSn7XRQcELJw"/>
       </node>
-      <node xmi:type="uml:JoinNode" xmi:id="_aE_5QHJNEei-Mrx8qSm6Bw" name="CombineData" incoming="_fTwdIHJNEei-Mrx8qSm6Bw _f85gwHJNEei-Mrx8qSm6Bw _SOzjoHJOEei-Mrx8qSm6Bw _ua3bYHLrEeiPAffOBZKOsg" outgoing="_CZ6lEOQ9EeiREf9mJem41A">
+      <node xmi:type="uml:JoinNode" xmi:id="_aE_5QHJNEei-Mrx8qSm6Bw" name="CombineData" incoming="_fTwdIHJNEei-Mrx8qSm6Bw _f85gwHJNEei-Mrx8qSm6Bw _FwCm0FSgEemJwraxn9aZHw" outgoing="_CZ6lEOQ9EeiREf9mJem41A">
         <joinSpec xmi:type="uml:LiteralBoolean" xmi:id="_aFAgUHJNEei-Mrx8qSm6Bw" name="Join1" value="true"/>
       </node>
       <node xmi:type="uml:DecisionNode" xmi:id="_FSNxYHJOEei-Mrx8qSm6Bw" name="" incoming="_Kq9-wHJOEei-Mrx8qSm6Bw" outgoing="_Pu06MHJOEei-Mrx8qSm6Bw _ua3bYHLrEeiPAffOBZKOsg"/>
@@ -374,6 +378,7 @@
       <node xmi:type="uml:AcceptEventAction" xmi:id="_RxepsDenEemlAtv87Z4J8A" name="PT1M" incoming="_nd78IHMEEeis99BW1eMcEA" outgoing="_a3RJgDenEemlAtv87Z4J8A">
         <trigger xmi:id="_RxepsTenEemlAtv87Z4J8A" name="Trigger1" event="_RxepsjenEemlAtv87Z4J8A"/>
       </node>
+      <node xmi:type="uml:MergeNode" xmi:id="_57SmYFSfEemJwraxn9aZHw" name="" incoming="_SOzjoHJOEei-Mrx8qSm6Bw _ua3bYHLrEeiPAffOBZKOsg" outgoing="_FwCm0FSgEemJwraxn9aZHw"/>
     </packagedElement>
     <packagedElement xmi:type="uml:TimeEvent" xmi:id="_ekLsQHJLEei-Mrx8qSm6Bw" name="TimeEvent1">
       <when xmi:id="_Vw0aQEEBEemXF9o1KENqIw"/>
