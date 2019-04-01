@@ -22,3 +22,6 @@ The file `model.uml` contains the Eclipse UML2 model of the application.
 The file `representations.aird` contains the diagrams designed with UML Designer.
 
 The file `codeGeneration.properties` contains settings for the code generation.
+
+## Demo Implementation
+A demo implementation of the code generated from this model can be found in the [health-care-iot-example-impl](https://github.com/fog-uml-2-code/health-care-iot-example-impl) repository.
